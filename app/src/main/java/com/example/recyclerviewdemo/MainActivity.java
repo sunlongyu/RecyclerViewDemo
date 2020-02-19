@@ -18,6 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+
+        //设置数据横向排列
+        linearLayoutManager.setOrientation(RecyclerView.HORIZONTAL);
+        //设置数据反向排列
+        linearLayoutManager.setReverseLayout(true);
+
         recyclerView.setLayoutManager(linearLayoutManager);
 
         List<String> dataSource = new ArrayList<>();
