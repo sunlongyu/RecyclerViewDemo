@@ -28,6 +28,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     public void setDataSource(List<String> dataSource) {
         this.dataSource = dataSource;
+        notifyDataSetChanged();
     }
 
     @NonNull
